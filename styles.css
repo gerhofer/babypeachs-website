@@ -16,6 +16,25 @@ header {
   background-size: cover;
 }
 
+.typecarousel {
+  width: 30%;
+  text-align: left;
+}
+
+#carousel > .wrap {
+  border-right: 0.08em solid #666;
+  animation: animated-cursor 1000ms steps(30, end) infinite;
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: #666;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 .aboutme {
   display: flex;
   align-items: center;
@@ -50,17 +69,22 @@ hr {
   height: 1px;
 }
 
+.skills {
+  text-align: center;
+}
+
 .skills ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 70%;
+  padding: 20px;
   margin: auto;
 }
 
 .skills ul li {
   list-style: none;
-  padding: 20px;
+  min-width: 15%;
 }
 
 .skills ul li i {
