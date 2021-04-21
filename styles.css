@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
 body {
-  background: orange;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
+}
+
+header {
+  display: flex;
+  height: 60vh;
+  background-color: lightgray;
+  justify-content: center;
+  align-items: center;
 }
