@@ -9,7 +9,62 @@ body {
 header {
   display: flex;
   height: 60vh;
-  background-color: lightgray;
   justify-content: center;
   align-items: center;
+  background: url(https://raw.githubusercontent.com/gerhofer/babypeachs-website/master/assets/paint.jpg)
+    no-repeat fixed;
+  background-size: cover;
+}
+
+.aboutme {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 150px;
+}
+
+.aboutme img {
+  border-radius: 50%;
+  width: 70%;
+  padding: 15%;
+}
+
+div.description {
+  padding-right: 5%;
+  flex: 3;
+}
+
+div.image {
+  flex: 1;
+}
+
+hr {
+  margin-left: 5%;
+  margin-right: 5%;
+  background: linear-gradient(
+    to right,
+    rgba(249, 105, 14, 1) 0%,
+    rgba(102, 51, 153, 1) 100%
+  );
+  border: 0;
+  height: 1px;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills ul li {
+  list-style: none;
+  padding: 20px;
+}
+
+.skills ul li i {
+  border: 4px solid black;
+  border-radius: 50%;
+  padding: 10px;
 }
