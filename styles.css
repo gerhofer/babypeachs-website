@@ -161,14 +161,16 @@ a {
   cursor: default;
 }
 
-.view .mask,
-.view .content {
+.view .mask {
   width: 450px;
   height: 300px;
   position: absolute;
   overflow: hidden;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .view img {
@@ -194,7 +196,6 @@ a {
 }
 
 .view-sixth p {
-  font-size: 2.5em;
   text-transform: uppercase;
   opacity: 0;
   transition-delay: 0.2s;
