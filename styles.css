@@ -182,28 +182,61 @@ a {
   position: relative;
   padding: 10px 20px 20px;
   text-align: center;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.view-sixth .mask {
-  background-color: rgba(146, 96, 91, 0.5);
+.view-sixth .mask,
+.view-three .mask {
+  background-color: rgba(249, 105, 14, 0.5);
   opacity: 0;
   transition: all 0.3s ease-in 0.4s;
 }
 
+.view-two .mask {
+  background-color: rgba(102, 51, 153, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in 0.4s;
+}
+
+.view-two:hover .mask,
+.view-three:hover .mask,
 .view-sixth:hover .mask {
   opacity: 1;
   transition-delay: 0s;
 }
 
+.view-three p,
 .view-sixth p {
   text-transform: uppercase;
   opacity: 0;
   transition-delay: 0.2s;
   transition-duration: 0.3s;
+  font-weight: bold;
 }
 
+.view-two p {
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+  font-weight: bold;
+  transform: scale(0);
+}
+
+.view-two:hover p {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.view-three:hover p,
 .view-sixth:hover p {
   opacity: 1;
   transform: translateY(0px);
   -webkit-transform: translateY(0px);
+}
+
+.project-image {
+  d
+  justify-content: center;
+  align-items: center;
 }
