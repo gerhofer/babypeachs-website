@@ -236,7 +236,7 @@ a {
 }
 
 .project-image {
-  d
+  display: flex;
   justify-content: center;
   align-items: center;
 }
